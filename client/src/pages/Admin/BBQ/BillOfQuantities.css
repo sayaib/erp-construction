@@ -1,0 +1,16 @@
+:root {
+  --bbq-color: black;
+  --card-background: #e5e5e5;
+}
+
+[data-theme="dark"] {
+  --bbq-color: white;
+  --card-background: #23303d;
+}
+
+.bbq-div {
+  padding: 1rem 0;
+}
+.bbq-form {
+  background: var(--card-background) !important;
+}

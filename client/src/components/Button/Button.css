@@ -1,0 +1,42 @@
+:root {
+  --button-bg: #f0f0f0; /* Light mode background */
+  --button-text: #333; /* Light mode text color */
+  --button-border: #ccc; /* Light mode border color */
+}
+
+[data-theme="dark"] {
+  --button-bg: #333; /* Dark mode background */
+  --button-text: #f0f0f0; /* Dark mode text color */
+  --button-border: #555; /* Dark mode border color */
+}
+
+.button-submit {
+  padding: 5px 20px;
+  border: 1px solid var(--button-border);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s, border-color 0.3s;
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.button-submit:hover {
+  opacity: 0.8;
+}
+
+.button-submit:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Focus effect for accessibility */
+}
+
+.button-submit:active {
+  transform: scale(0.95); /* Button press effect */
+}
+
+/* Optional: Add styles for disabled state */
+.button-submit:disabled {
+  background-color: #ccc; /* Grey out the button */
+  color: #666; /* Lighter text color */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}

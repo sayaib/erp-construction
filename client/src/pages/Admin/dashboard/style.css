@@ -1,0 +1,15 @@
+:root {
+  --grid-color: black;
+  --card-background: #e5e5e5;
+}
+
+[data-theme="dark"] {
+  --grid-color: white;
+  --card-background: #23303d;
+}
+
+.grid-status {
+  padding: 1rem;
+  color: var(--grid-color);
+  background-color: var(--card-background) !important;
+}
